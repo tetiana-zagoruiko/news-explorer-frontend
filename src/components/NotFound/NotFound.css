@@ -1,0 +1,37 @@
+.notfound {
+  background-color: #F5F6F7;
+  height: 208px;
+  padding-top: 86px;
+  padding-bottom: 80px;
+}
+
+.notfound__image {
+  display: block;
+  height: 96px;
+  width: 96px;
+  margin: auto;
+}
+
+.notfound__title {
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 30px;
+  text-align: center;
+  color: #1A1B22;
+  margin: 24px auto 0 auto;
+}
+
+.notfound__text {
+  white-space: pre-line;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #B6BCBF;
+  width: 356px;
+  margin: 16px auto 0 auto;
+}

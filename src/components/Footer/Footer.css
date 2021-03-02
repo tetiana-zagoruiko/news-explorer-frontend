@@ -1,0 +1,139 @@
+.footer {
+  padding: 30px 104px 26px 104px;
+  display: grid;
+  grid-template-columns: auto 304px 68px;
+  grid-gap: 42px;
+}
+
+@media screen and (max-width: 1024px) {
+    .footer {
+      padding: 24px 40px 18px 40px;
+      grid-template-columns: auto 264px 67px;
+      grid-gap: 26px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .footer {
+      padding: 20px 16px;
+      grid-template-columns: none;
+      grid-column-gap: 18px;
+      grid-row-gap: 38px;
+      grid-template-areas:
+      "links buttons"
+      "text text"
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .footer__links {
+      grid-area: links;
+      display: flex;
+      flex-direction: column;
+      height: 74px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .footer__buttons {
+      grid-area: buttons;
+      justify-self: end;
+    }
+}
+
+
+.footer__link-home {
+  margin: 0 36px;
+  text-align: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #1A1B22;
+  text-decoration: none; 
+  text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+    .footer__link-home {
+      margin: 0 22px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .footer__link-home {
+      align-self: start;
+      margin: 0 0 24px 0;
+    }
+}
+
+.footer__link-yandex {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #1A1B22;
+  text-decoration: none; 
+  text-align: left;
+}
+
+.footer__text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #B6BCBF;
+  margin: 0;
+}
+
+@media screen and (max-width: 750px) {
+    .footer__text {
+      grid-area: text;
+    }
+}
+
+
+.footer__button-git {
+  background-image: url('../../images/git.svg');
+  background-size: cover; 
+  height: 20px;
+  width: 20px;
+  border: 0;
+  background-color: white;
+  margin-right: 20px;
+}
+
+.footer__button-git:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 750px) {
+    .footer__button-git {
+      margin-right: 0px;
+    }
+}
+
+
+.footer__button-facebook {
+  background-image: url('../../images/facebook.svg');
+  background-size: cover; 
+  height: 20px;
+  width: 20px;
+  border: 0;
+  background-color: white;
+}
+.footer__button-facebook:hover {
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 750px) {
+    .footer__button-facebook {
+      margin-left: 27px;
+    }
+}

@@ -1,0 +1,33 @@
+.preloader {
+    background: #F5F6F7;
+    height: 202px;
+    padding: 80px 0 0 0;
+}
+
+.preloader__circle {
+    display: block;
+    margin: auto;
+	width: 73px;
+	height: 73px;
+	border: 1px solid #444;
+	border-bottom-color: #888;
+	border-radius: 50%;
+	animation: spin .75s infinite linear;
+}
+
+@keyframes spin {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.preloader__text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #B6BCBF;
+    margin: 24px auto 0 auto;
+}
