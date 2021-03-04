@@ -3,7 +3,6 @@ import React from 'react';
 function SearchResult() {
 
   return (
-    <div>
       <section className="search-news">
         <h2 className="search-news__paragraph">Search results</h2>
         <ul className="news__container">
@@ -61,7 +60,6 @@ function SearchResult() {
         </ul>
         <button className="search-news__button">Show more</button>
       </section>
-    </div>
   );
 
 }

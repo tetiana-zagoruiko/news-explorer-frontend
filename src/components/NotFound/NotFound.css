@@ -32,6 +32,6 @@
   line-height: 24px;
   text-align: center;
   color: #B6BCBF;
-  width: 356px;
+  max-width: 356px;
   margin: 16px auto 0 auto;
 }

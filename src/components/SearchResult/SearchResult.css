@@ -42,7 +42,9 @@
 
 @media screen and (max-width: 768px) {
     .search-news__paragraph {
-        margin: 0 auto 58px 16px;
+        width: 288px;
+        margin: 0 auto 58px auto;
+        text-align: center;
     }
 }
 

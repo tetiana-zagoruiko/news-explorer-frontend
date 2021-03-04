@@ -61,7 +61,6 @@ function SigninPopup({ isOpen, onClose, submitSignin, onClickSignup }) {
   }
 
   return (
-    <div>
       <div>
         {isOpen ? (
           <PopupWithForm
@@ -90,8 +89,6 @@ function SigninPopup({ isOpen, onClose, submitSignin, onClickSignup }) {
             </div>
           )}
       </div>
-      
-    </div>
   );
 }
 export default SigninPopup;

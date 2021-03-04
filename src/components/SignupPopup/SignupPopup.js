@@ -66,7 +66,6 @@ function SignupPopup({ isOpen, onClose, submitSignup, errorName, onClickSignin }
   }
 
   return (
-    <div>
       <PopupWithForm
         handleSubmit={handleSubmit}
         isOpen={isOpen}
@@ -92,7 +91,6 @@ function SignupPopup({ isOpen, onClose, submitSignup, errorName, onClickSignin }
             <h3 className='popup__text'>or <a className="popup__link" onClick={onClickSignin}>Sign in</a></h3>
           </React.Fragment>}
       />
-    </div>
   );
 }
 

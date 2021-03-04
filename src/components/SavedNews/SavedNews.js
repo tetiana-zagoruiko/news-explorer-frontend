@@ -3,7 +3,6 @@ import React from 'react';
 function SavedNews() {
 
   return (
-    <div>
       <section className="news">
         <ul className="news__container">
           <li className="news__item">
@@ -78,7 +77,6 @@ function SavedNews() {
           </li>
         </ul>
       </section>
-    </div>
   );
 
 }

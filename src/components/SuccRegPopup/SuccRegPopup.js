@@ -4,7 +4,6 @@ import PopupWithForm from '../PopupWithForm/PopupWithForm.js';
 function SuccRegPopup({ isOpen, onClose, onClickSignin }) {
 
   return (
-    <div>
       <PopupWithForm
         isOpen={isOpen}
         onClose={onClose}
@@ -15,7 +14,6 @@ function SuccRegPopup({ isOpen, onClose, onClickSignin }) {
             <a className="popup__succ-link" onClick={onClickSignin}>Sign in</a>
           </React.Fragment>}
       />
-    </div>
   );
 }
 

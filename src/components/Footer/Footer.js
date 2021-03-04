@@ -3,7 +3,6 @@ import React from 'react';
 function Footer() {
 
   return (
-    <div>
       <section className="footer">
         <p className="footer__text">&copy; 2020 Supersite, Powered by News API</p>
         <div className="footer__links">
@@ -15,7 +14,6 @@ function Footer() {
           <a href='https://m.facebook.com/yandex.praktikum/' target="_blank"><button className="footer__button-facebook"></button></a>
         </div>
       </section>
-    </div>
   );
 }
 
