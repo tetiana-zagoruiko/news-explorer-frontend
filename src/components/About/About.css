@@ -1,0 +1,128 @@
+.about {
+  max-height: 624px;
+  padding: 80px 215px 80px 104px;
+  display: grid;
+  grid-template-columns: auto 600px;
+  grid-template-rows: 97px auto;
+  grid-column-gap: 56px;
+  grid-row-gap: 24px;
+  grid-template-areas:
+  "image title"
+  "image text"
+}
+
+@media screen and (max-width: 1200px) {
+    .about {
+      max-height: 354px;
+      padding: 80px 215px 80px 104px;
+      grid-template-columns: 232px auto;
+      grid-template-rows: 34px auto;
+      grid-column-gap: 32px;
+      grid-row-gap: 16px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .about {
+      max-height: 354px;
+      padding: 40px 40px;
+      grid-template-columns: 232px auto;
+      grid-template-rows: 34px auto;
+      grid-column-gap: 32px;
+      grid-row-gap: 16px;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .about {
+      display: block;
+      padding: 32px 24px 128px 24px;
+      max-height: none;
+      grid-template-columns: none;
+      grid-template-rows: none;
+      grid-column-gap: none;
+      grid-row-gap: none;
+    }
+}
+
+
+
+.about__title {
+  grid-area: title;
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 46px;
+  color: #1A1B22;
+  margin: 51px 0 0 0;
+}
+
+@media screen and (max-width: 1200px) {
+    .about__title {
+      font-size: 30px;
+      line-height: 40px;
+      margin: 0;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .about__title {
+      font-size: 30px;
+      line-height: 40px;
+      margin: 24px auto 0 auto;
+    }
+}
+
+
+
+.about__text {
+  grid-area: text;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #1A1B22;
+  margin: 0;
+}
+
+@media screen and (max-width: 1200px) {
+    .about__text {
+      max-width: 424px;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .about__text {
+      margin: 16px 0 0 0;
+    }
+}
+
+
+.about__image {
+  margin: auto;
+  grid-area: image;
+  width: 100%;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .about__image {
+      height: 232px;
+      width: 232px;
+      margin-top: 17px;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .about__image {
+      width: 272px;
+      height: 272px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 0;
+    }
+}

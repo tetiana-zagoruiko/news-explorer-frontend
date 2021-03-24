@@ -1,0 +1,16 @@
+.popup__succ-link {
+  display: inline-block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #2F71E5;
+  margin: 14px auto 51px 36px;
+}
+
+@media screen and (max-width: 400px) {
+    .popup__succ-link {
+      margin-left: 17px;
+    }
+}
