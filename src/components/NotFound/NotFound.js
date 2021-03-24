@@ -1,13 +1,20 @@
 import notFoundImage from "../../images/not-found.svg";
 
-function NotFound() {
-  const text = `Sorry, but nothing matched\nyour search terms.`;
+function NotFound({visible, notFoundText}) {
+
   return (
-      <section className="notfound">
+    <div>
+    {visible ? (
+        <section className="notfound">
         <img src={notFoundImage} alt="nothing found" className="notfound__image" />
         <h2 className="notfound__title">Nothing found</h2>
-        <p className="notfound__text">{text}</p>
+        <p className="notfound__text">{notFoundText}</p>
       </section>
+    ) : (
+            <div>
+            </div>
+        )}
+    </div>
   );
 }
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function MobilePopup({ isOpen, onClose, onSignOut, loggedIn, onClickSignin }) {
+function MobilePopup({ isOpen, onClose, onSignOut, loggedIn, onClickSignin, closeMobilePopup }) {
 
   if (isOpen && loggedIn) {
     return (
@@ -30,7 +30,7 @@ function MobilePopup({ isOpen, onClose, onSignOut, loggedIn, onClickSignin }) {
           </div>
           <div className="mobile-popup__main">
             <Link to="/" className={`mobile-popup__link`} onClick={onClose}>Home</Link>
-            <button className={`mobile-popup__button `} onClick={onClickSignin}>Sign in</button>
+            <Link to="/signin"><button className={`mobile-popup__button `} onClick={closeMobilePopup}>Sign in</button></Link>
           </div>
         </div>
       </div>

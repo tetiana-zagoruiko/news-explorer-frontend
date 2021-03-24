@@ -1,7 +1,8 @@
 import React from 'react';
 import PopupWithForm from '../PopupWithForm/PopupWithForm.js';
+import { Link } from 'react-router-dom';
 
-function SuccRegPopup({ isOpen, onClose, onClickSignin }) {
+function SuccRegPopup({ isOpen, onClose, closeRegSucc }) {
 
   return (
       <PopupWithForm
@@ -11,7 +12,7 @@ function SuccRegPopup({ isOpen, onClose, onClickSignin }) {
         children={
           <React.Fragment>
             <h2 className='popup__name'>Registration successfully completed!</h2>
-            <a className="popup__succ-link" onClick={onClickSignin}>Sign in</a>
+            <Link to="/signin" className="popup__succ-link" onClick={closeRegSucc}>Sign in</Link>
           </React.Fragment>}
       />
   );
