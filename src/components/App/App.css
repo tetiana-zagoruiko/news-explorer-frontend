@@ -9,21 +9,15 @@
     text-rendering: optimizeLegibility;
     min-height: 100vh; 
 }
-
-@media screen and (max-width: 1440px) { 
-    .page { 
-        max-width: 1440px; 
-    } 
-} 
  
 
 body {
-  margin: 0;
   padding: 0;
   width: 100%;
 }
 
 #root {
+    margin: auto;
     max-width: 1440px;
     min-width: 320px;
 }

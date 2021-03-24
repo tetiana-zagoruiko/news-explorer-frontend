@@ -132,9 +132,13 @@
 }
 
 
-.news__add:active {
-  background-image: url('../../images/news-add-blue.svg');
+.news__add_active {
+  background-image: url('../../images/news-add-black.svg');
 }
+
+.news__add_active {
+    background-image: url('../../images/news-add-blue.svg');
+  }
 
 .search-news__button {
     width: 288px;
@@ -169,4 +173,8 @@
 
 .search-news__button:hover {
     opacity: 0.9;
+}
+
+.search-news__button_invisible {
+    display: none;
 }

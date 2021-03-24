@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom';
 function SavedNewsHeader({ onSignOut, name, openMobilePopup }) {
 
   const currentUser = React.useContext(CurrentUserContext);
+  //articles = articles.filter(article => article.owner == currentUser._id)
+  //console.log(articles);
 
   return (
       <header className={`header-saved header-saved${name}`}>

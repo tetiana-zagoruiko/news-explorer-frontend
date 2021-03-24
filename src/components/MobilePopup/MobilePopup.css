@@ -62,6 +62,7 @@
     color: #FFFFFF;
     text-decoration: none;
     margin-top: 15px;
+    text-decoration: none;
 }
 
 .mobile-popup__main {
@@ -85,6 +86,6 @@
     line-height: 24px;
     color: #FFFFFF;
     background-color: transparent;
-    margin-top: 22px;
-    margin-bottom: 24px;
+    margin: 22px auto 24px auto;
+    text-decoration: none;
 }

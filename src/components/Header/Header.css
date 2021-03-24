@@ -94,6 +94,8 @@
 
 
 .header__button-signin {
+  width: 152px;
+  height: 40px;
   margin: 19px 0 13px 0;
   color: white;
   border: 1px solid #FFFFFF;

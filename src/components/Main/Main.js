@@ -5,7 +5,7 @@ import SavedNewsHeader from '../SavedNewsHeader/SavedNewsHeader.js';
 import SavedNewsMain from '../SavedNewsMain/SavedNewsMain.js';
 import CurrentUserContext from '../../contexts/CurrentUserContext.js';
 
-function Main({ openPopup, onSignOut, name, openMobilePopup}) {
+function Main({ articles, openPopup, onSignOut, name, openMobilePopup, handleSearch}) {
 
   const currentUser = React.useContext(CurrentUserContext);
 
@@ -13,21 +13,21 @@ function Main({ openPopup, onSignOut, name, openMobilePopup}) {
     return (
         <section className="cover">
           <Header openPopup={openPopup} openMobilePopup={openMobilePopup} />
-          <SearchForm />
+          <SearchForm handleSearch={handleSearch} />
         </section>
     );
   } else if (name) {
     return (
         <section className={`cover cover${name}`}>
-          <SavedNewsHeader onSignOut={onSignOut} name={name} openMobilePopup={openMobilePopup} />
-          <SavedNewsMain />
+          <SavedNewsHeader  onSignOut={onSignOut} name={name} openMobilePopup={openMobilePopup} />
+          <SavedNewsMain articles={articles} />
         </section>
     );
   } else {
     return (
         <section className="cover">
           <SavedNewsHeader onSignOut={onSignOut} openMobilePopup={openMobilePopup}/>
-          <SearchForm />
+          <SearchForm handleSearch={handleSearch} />
         </section>
     );
   };
